@@ -1,2 +1,2 @@
 # Website
-My new website
+The new JBNCK website is hosted here.
