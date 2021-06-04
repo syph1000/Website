@@ -5,22 +5,73 @@
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
     <meta charset="utf-8">
     <title>JBNCK - The file repository</title>
+    <script>
+      function mobileResize(){
+        if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i) 
+                || navigator.userAgent.match(/iPad/i) 
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)) {
+              var element = document.getElementById("resize_main");
+              element.style.marginLeft = "8px"
+              element.style.marginRight = "8px"
+              
+              var element = document.getElementById("main_nav_element1");
+              element.style.display = "none"
+              var element = document.getElementById("main_nav_element2");
+              element.style.display = "none"
+              var element = document.getElementById("main_nav_element3");
+              element.style.display = "none"
+              var element = document.getElementById("page_indicator1");
+              element.style.display = "none"
+
+        }
+        else {
+          var element = document.getElementById("mobile_nav_element1");
+          element.style.display = "none"
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "none"
+        }
+      }
+      function pageIndicator(){
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "list-item"
+      }
+      function closePageIndicator() {
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "none"
+      }
+    </script>
   </head>
-  <body>
+  <body onload="mobileResize()">
+    <div class="page_indicator" id="page_indicator1">
+      <center>
+        <a> </a> <br>
+      <a class="indicator_element indicator_element_first" href="index.html">Home</a> <hr>
+      <a class="indicator_element indicator_element_current" href="downloads.html">Downloads</a> <hr>
+      <a class="indicator_element" href="about.html">About</a>
+      <a> </a> <br>
+      <a> </a> <br>
+
+      <button type="button" class="indicator_element_button" onclick="closePageIndicator()">&cross; Close</button>
+      </center>
+    </div>
     <header>
       <div id="navbar">
-        <a class="nav_element nav_element_home" href="index.html">Home</a>
-        <a class="nav_element_current" href="downloads.html">Downloads</a>
-        <a class="nav_element" href="about.html">About</a>
+        <a id="main_nav_element1" class="nav_element_current nav_element_home" href="index.html">Home</a>
+        <a id="main_nav_element2" class="nav_element_current" href="downloads.html">Downloads</a>
+        <a id="main_nav_element3" class="nav_element" href="about.html">About</a>
+        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()"> ☰ Menu</button>
       </div>
     </header>
-    <main>
+    <main id="resize_main">
       <h1>The file repository</h1>
       <hr>
-
-      <iframe class="download_form" src="https://jbnck.github.io/WebsiteDownloadForm/index.html" frameborder="0"></iframe>
-
+      <center><iframe class="download_form" src="https://jbnck.github.io/WebsiteDownloadForm/index.html" frameborder="0"></iframe></center>
     </main>
+
     <footer></footer>
   </body>
 </html>

@@ -53,10 +53,44 @@ body {
 .download_form {
     border: orangered 4px solid;
     margin-top: 20px;
-    width: 100%;
+    width: 98%;
     height: 600px;
 }
-
+.mobile_nav_element {
+    border: solid 2px orangered;
+    color: #ffffff;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    margin-right: 5px;
+    background-color: orangered;
+}
+.page_indicator {
+    background-color: #f0f0f0;
+}
+.indicator_element {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+}
+.indicator_element_first {
+    margin-top: 20px;
+}
+.indicator_element_button {
+    color: #000000;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+    border: orangered 4px solid;
+}
+.indicator_element_current {
+    color: orangered;
+}
 main {
     margin-left: 15%;
     margin-right: 15%;
