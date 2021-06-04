@@ -1,0 +1,6 @@
+# 06/04/2021
+- Archived current website
+- Created new repository for Website (same URL)
+- Made new website responsive
+- Added "privacy policy" :) (See "About")
+- Added some placeholders that will be replaced soon

@@ -5,6 +5,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 } 
 
+a {
+    text-decoration: none;
+    color: royalblue;
+}
 a:hover {
     color: orangered;
 }
@@ -19,8 +23,8 @@ a:hover {
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    transition: background-color 0.1s ease-out 50ms;
-    transition: color 0.1s ease-out 50ms;
+    transition: background-color 0.3s ease-out 70ms;
+    transition: color 0.3s ease-out 70ms;
 }
 .nav_element:hover {
     background-color: white;
@@ -34,8 +38,8 @@ a:hover {
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    transition: background-color 0.1s ease-out 50ms;
-    transition: color 0.1s ease-out 10ms;
+    transition: background-color 0.1s ease-out 70ms;
+    transition: color 0.3s ease-out 10ms;
 }
 .nav_element_current:hover {
     background-color: #ffffff;
@@ -45,8 +49,8 @@ a:hover {
     background-color: orangered;
     color: #ffffff;
     margin-right: 5px;
-    transition: background-color 0.5s ease-out 50ms;
-    transition: color 0.1s ease-out 50ms;
+    transition: background-color 0.5s ease-out 70ms;
+    transition: color 0.3s ease-out 50ms;
 }
 .nav_element_home:hover {
     background-color: red;
@@ -68,8 +72,8 @@ a:hover {
     float: left;
     margin-right: 5px;
     background-color: orangered;
-    transition: background-color 0.5s ease-out 50ms;
-    transition: border 0.5s ease-out 50ms;
+    transition: background-color 0.3s ease-out 70ms;
+    transition: border 0.3s ease-out 50ms;
 }
 .mobile_nav_element:hover {
     border: solid 2px red;
