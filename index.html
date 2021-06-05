@@ -18,6 +18,8 @@
               element.style.marginLeft = "8px"
               element.style.marginRight = "8px"
               
+              var element = document.getElementById("mobile_nav_element1");
+              element.style.display = "block"
               var element = document.getElementById("main_nav_element1");
               element.style.display = "none"
               var element = document.getElementById("main_nav_element2");
@@ -25,6 +27,7 @@
               var element = document.getElementById("main_nav_element3");
               element.style.display = "none"
               var element = document.getElementById("page_indicator1");
+              element.setAttribute("style", "display: block;");
               element.style.display = "none"
 
         }
@@ -46,7 +49,15 @@
     </script>
   </head>
   <body onload="mobileResize()">
-    <div class="page_indicator" id="page_indicator1" >
+
+    <header>
+      <div id="navbar">
+        <a id="main_nav_element1" class="nav_element_current nav_element_home" href="index.html">Home</a>
+        <a id="main_nav_element2" class="nav_element" href="downloads.html">Downloads</a>
+        <a id="main_nav_element3" class="nav_element" href="about.html">About</a>
+        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()" style="display: none;"><a href="#TOP" style="color: white;"> ☰ Menu</a></button>
+      </div>
+    <div style="display: none;" class="page_indicator" id="page_indicator1" >
       <center>
         <a> </a> <br>
       <a class="indicator_element indicator_element_first indicator_element_current" href="index.html">Home</a> <hr>
@@ -57,30 +68,41 @@
 
       <button type="button" class="indicator_element_button" onclick="closePageIndicator()">&cross; Close</button>
       </center>
-    </div>
-    <header>
-      <div id="navbar">
-        <a id="main_nav_element1" class="nav_element_current nav_element_home" href="index.html">Home</a>
-        <a id="main_nav_element2" class="nav_element" href="downloads.html">Downloads</a>
-        <a id="main_nav_element3" class="nav_element" href="about.html">About</a>
-        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()" > ☰ Menu</button>
-      </div>
+    </div>      
     </header>
     <main id="resize_main">
-      <h1>Home</h1>
+      <h1 name="TOP">Home</h1>
       <hr>
       <p>This website is still a prototype. Expect bugs, inconsistencies, errors and/or other inconveniences.</p>
       <p>Welcome to my website, I guess! This is a little side project that I'm doing in order to improve my web development skills. Have fun exploring it!</p>
 
       <h2>Projects</h2>
       <hr>
-      <p>"PLACEHOLDER"</p>
-
+      <p>A brief list of projects worth visiting. Descriptions and links will be provided soon.</p>
+      <ul>
+          <li><a>Fairphone 3 debloater</a></li>
+          <li><a>Useless Android Feature Remover</a></li>
+          <li><a>CLINOTE (Command line notes)</a></li>
+          <li><a>Shell script collection</a></li>
+      </ul>
       <h2>Changelog</h2>
       <hr>
       <p>Recent changes to the website</p>
-      <center><iframe class="download_form" src="CHANGELOG.txt" frameborder="0"></iframe></center>
+      <center><iframe class="download_form" style="height: 400px;" src="CHANGELOG.txt" frameborder="0"></iframe></center>
     </main>
-    <footer></footer>
+    <footer>
+      <center>
+      <div class="bottom_footer">
+        <br> <h2><a style="color: black;" class="bottom_footer_up" href="#TOP">Back to top</a></h2>
+        <a href="http://github.com/JBNCK/Website">Download this website</a> <br>
+        <a href="http://github.com/JBNCK/">Visit my GitHub</a> <br>
+        <a href="downloads.html">Non-GitHub projects</a> <br>
+        <a href="about.html">Privacy policy</a> <br>
+        
+        <a>  </a> <br>
+        <a>  </a> <br>
+      </div>
+      </center>
+    </footer>
   </body>
 </html>

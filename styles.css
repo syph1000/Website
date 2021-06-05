@@ -14,6 +14,9 @@ a:hover {
 }
 #navbar {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #121212;
 }
 .nav_element {
@@ -23,7 +26,7 @@ a:hover {
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    transition: background-color 0.3s ease-out 70ms;
+    transition: all 0.3s ease-out 70ms;
     transition: color 0.3s ease-out 70ms;
 }
 .nav_element:hover {
@@ -38,7 +41,7 @@ a:hover {
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    transition: background-color 0.1s ease-out 70ms;
+    transition: all 0.1s ease-out 70ms;
     transition: color 0.3s ease-out 10ms;
 }
 .nav_element_current:hover {
@@ -49,7 +52,7 @@ a:hover {
     background-color: orangered;
     color: #ffffff;
     margin-right: 5px;
-    transition: background-color 0.5s ease-out 70ms;
+    transition: all 0.5s ease-out 70ms;
     transition: color 0.3s ease-out 50ms;
 }
 .nav_element_home:hover {
@@ -60,7 +63,6 @@ a:hover {
     border: orangered 4px solid;
     margin-top: 20px;
     width: 98%;
-    height: 600px;
 }
 .mobile_nav_element {
     border: solid 2px orangered;
@@ -72,16 +74,19 @@ a:hover {
     float: left;
     margin-right: 5px;
     background-color: orangered;
-    transition: background-color 0.3s ease-out 70ms;
-    transition: border 0.3s ease-out 50ms;
+    transition: all 0.3s ease-out 70ms;
 }
 .mobile_nav_element:hover {
     border: solid 2px red;
     background-color: red;
 }
 .page_indicator {
+    margin-top: 45px;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
     background-color: #f0f0f0;
 }
+
 .indicator_element {
     color: #000000;
     text-align: center;
@@ -99,6 +104,7 @@ a:hover {
     font-size: large;
     margin-bottom: 20px;
     border: orangered 4px solid;
+    transition: all 0.1s ease-in-out 120ms;
 }
 .indicator_element_button:hover {
     border: rgb(206, 0, 0) solid 4px;
@@ -106,7 +112,13 @@ a:hover {
 .indicator_element_current {
     color: orangered;
 }
+.bottom_footer {
+    margin-top: 35px;
+    background-color: #ececec;
+    color: #000000;
+}
 main {
     margin-left: 15%;
+    margin-top: 70px;
     margin-right: 15%;
 }

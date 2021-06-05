@@ -1,3 +1,13 @@
+# 06/05/2021
+- Replaced some placeholders
+- Added a footer
+- Fixed some animations
+- Fixed stuttery transitions on page load
+- Navigation bar now fixed
+- Fixed typos and language errors
+- Mobile page indicator now shows below the navigation bar
+- Mobile menu now scrolls back to the top of the page when pressed
+- Other minor (design) fixes
 # 06/04/2021
 - Archived current website
 - Created new repository for Website (same URL)

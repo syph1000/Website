@@ -18,6 +18,8 @@
               element.style.marginLeft = "8px"
               element.style.marginRight = "8px"
               
+              var element = document.getElementById("mobile_nav_element1");
+              element.style.display = "block"
               var element = document.getElementById("main_nav_element1");
               element.style.display = "none"
               var element = document.getElementById("main_nav_element2");
@@ -25,6 +27,7 @@
               var element = document.getElementById("main_nav_element3");
               element.style.display = "none"
               var element = document.getElementById("page_indicator1");
+              element.setAttribute("style", "display: block;");
               element.style.display = "none"
 
         }
@@ -46,7 +49,15 @@
     </script>
   </head>
   <body onload="mobileResize()">
-    <div class="page_indicator" id="page_indicator1" >
+
+    <header>
+      <div id="navbar">
+        <a id="main_nav_element1" class="nav_element nav_element_home" href="index.html">Home</a>
+        <a id="main_nav_element2" class="nav_element" href="downloads.html">Downloads</a>
+        <a id="main_nav_element3" class="nav_element_current" href="about.html">About</a>
+        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()" style="display: none;"><a href="#TOP" style="color: white;"> ☰ Menu</a></button>
+      </div>
+    <div style="display: none;" class="page_indicator" id="page_indicator1" >
       <center>
         <a> </a> <br>
       <a class="indicator_element indicator_element_first" href="index.html">Home</a> <hr>
@@ -58,13 +69,6 @@
       <button type="button" class="indicator_element_button" onclick="closePageIndicator()">&cross; Close</button>
       </center>
     </div>
-    <header>
-      <div id="navbar">
-        <a id="main_nav_element1" class="nav_element_current nav_element_home" href="index.html">Home</a>
-        <a id="main_nav_element2" class="nav_element" href="downloads.html">Downloads</a>
-        <a id="main_nav_element3" class="nav_element_current" href="about.html">About</a>
-        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()" > ☰ Menu</button>
-      </div>
     </header>
     <main id="resize_main">
       <h1>About me and this website</h1>
@@ -72,14 +76,12 @@
       <h2>Who am I?</h2>
       <p>A 13 year old kid who can't speak English properly but yet he is making a website in English. Please ignore the typos on this website :)</p>
       <h2>The purpose of this website?</h2>
-      <p>I write this website to improve my web development skills. I'm looking forward to take some classes in order to get even better.</p>
+      <p>I'm writing this website to improve my web development skills. I'm looking forward to take some classes in order to get even better.</p>
       <h2>Design language of this webiste</h2>
       <p>This website uses MataUX Design. Design guidelines can be found on my GitHub.</p>
       <a href="styles.css" download>Download this site's stylesheet</a>
       <h2>Privacy policy</h2>
       <p>Information on what data we collect can be found <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here.</a></p>
     </main>
-
-    <footer></footer>
   </body>
 </html>
