@@ -1,4 +1,11 @@
 # 06/05/2021
+- Added a favicon
+- An overview with all personal projects will soon be found under the "Projects" tab
+- Minot additions
+- Fixed language errors
+- The download form is getting a redesign
+- Website exited prototype stage and is now in alpha stage
+# 06/05/2021
 - Replaced some placeholders
 - Added a footer
 - Fixed some animations
