@@ -1,4 +1,6 @@
-# 06/05/2021
+# 06/10/2021
+- Announcement: I am going on summer vacation so there will be no commits for a few weeks!
+# 06/06/2021
 - Added a favicon
 - An overview with all personal projects will soon be found under the "Projects" tab
 - Minot additions
