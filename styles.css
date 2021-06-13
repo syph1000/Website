@@ -117,6 +117,10 @@ a:hover {
     background-color: #ececec;
     color: #000000;
 }
+.project_header {
+    font-size: x-large;
+}
+
 main {
     margin-left: 15%;
     margin-top: 70px;
