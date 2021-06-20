@@ -1,3 +1,7 @@
+# 06/20/2021
+- I was bored so I decided to make a commit even though I said that I wouldn't.
+- Added projects to the projects tab
+- Attempted to fix the weird margin on the navbar on iOS devices
 # 06/10/2021
 - Announcement: I am going on summer vacation so there will be no commits for a few weeks!
 # 06/06/2021

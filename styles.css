@@ -65,6 +65,7 @@ a:hover {
     width: 98%;
 }
 .mobile_nav_element {
+    margin: 0;
     border: solid 2px orangered;
     color: #ffffff;
     padding: 8px;
@@ -72,7 +73,6 @@ a:hover {
     text-align: center;
     text-decoration: none;
     float: left;
-    margin-right: 5px;
     background-color: orangered;
     transition: all 0.3s ease-out 70ms;
 }
