@@ -1,3 +1,15 @@
+Soon:
+- Better transitions while on mobile
+- Dark status bar in downloads tab on iOS 15
+- More visual changes to MataUX
+- GitHub repo for MataUX
+
+# 02.07.2021 - Surprise summer vacation commit
+- Changelog dates will now be in european format
+- Changes noted in the Changelog will now have a title (same as GitHub commit message)
+- This changelog will also be used for the hub I created recently (jbnck.github.io)
+- The website is no longer in alpha stage
+- I already have more ideas for this website like a Linux Kernel config repo
 # 06/20/2021
 - I was bored so I decided to make a commit even though I said that I wouldn't.
 - Added projects to the projects tab
