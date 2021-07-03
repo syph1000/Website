@@ -8,6 +8,10 @@ Soon:
 - Added more CSS animations
 - Mobile transitions no longer stutter
 - Added a kernel config page that will be filled up soon
+Minor side commits today:
+- Updated age
+- Made mobile menu button larger
+- Other minor changes
 # 02.07.2021 - Surprise summer vacation commit
 - Changelog dates will now be in european format
 - Changes noted in the Changelog will now have a title (same as GitHub commit message)
