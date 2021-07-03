@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-size: medium;
     font-family: 'Ubuntu', sans-serif;
+	transition: all 1s;
 } 
 
 a {
@@ -19,15 +20,29 @@ a:hover {
     top: 0;
     background-color: #121212;
 }
+#main_nav_element1 {
+	display: none;
+}
+
+#main_nav_element2 {
+	display: none;
+}
+
+#main_nav_element3 {
+	display: none;
+}
+
+#main_nav_element4 {
+	display: none;
+}
 .nav_element {
+	display: block;
     float: left;
-    display: block;
     color: #ffffff;
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    transition: all 0.3s ease-out 70ms;
-    transition: color 0.3s ease-out 70ms;
+    transition: all .2s;
 }
 .nav_element:hover {
     background-color: white;
@@ -74,7 +89,7 @@ a:hover {
     text-decoration: none;
     float: left;
     background-color: orangered;
-    transition: all 0.3s ease-out 70ms;
+	transition: all .7s;
 }
 .mobile_nav_element:hover {
     border: solid 2px red;
@@ -82,7 +97,7 @@ a:hover {
 }
 .page_indicator {
     margin-top: 45px;
-    transition: all .5s ease-in-out;
+    transition: all .7s;
     overflow: hidden;
     background-color: #f0f0f0;
 }
@@ -122,7 +137,8 @@ a:hover {
 }
 
 main {
-    margin-left: 15%;
+	transition: all .5s;
+    margin-left: 50%;
     margin-top: 70px;
-    margin-right: 15%;
+    margin-right: 50%;
 }

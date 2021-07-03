@@ -1,9 +1,13 @@
 Soon:
-- Better transitions while on mobile
 - Dark status bar in downloads tab on iOS 15
 - More visual changes to MataUX
 - GitHub repo for MataUX
+- New favicon
 
+# 03.07.2021 - Animations!
+- Added more CSS animations
+- Mobile transitions no longer stutter
+- Added a kernel config page that will be filled up soon
 # 02.07.2021 - Surprise summer vacation commit
 - Changelog dates will now be in european format
 - Changes noted in the Changelog will now have a title (same as GitHub commit message)

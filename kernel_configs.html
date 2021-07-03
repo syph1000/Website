@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/icon.jpg">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta charset="utf-8">
+    <title>JBNCK - Kernel configurations</title>
+    <script>
+      function mobileResize(){
+        if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i) 
+                || navigator.userAgent.match(/iPad/i) 
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)) {
+              var element = document.getElementById("resize_main");
+              element.style.marginLeft = "8px"
+              element.style.marginRight = "8px"
+              
+              var element = document.getElementById("mobile_nav_element1");
+              element.style.display = "block"
+              var element = document.getElementById("main_nav_element1");
+              element.style.display = "none"
+              var element = document.getElementById("main_nav_element2");
+              element.style.display = "none"
+              var element = document.getElementById("main_nav_element3");
+              element.style.display = "none"
+              var element = document.getElementById("main_nav_element4");
+              element.style.display = "none"
+              var element = document.getElementById("page_indicator1");
+              element.setAttribute("style", "display: block;");
+              element.style.display = "none"
+
+        }
+        else {
+          var element = document.getElementById("mobile_nav_element1");
+          element.style.display = "none"
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "none"
+		  var element = document.getElementById("resize_main");
+          element.style.marginLeft = "15%"
+          element.style.marginRight = "15%"
+		  var element = document.getElementById("main_nav_element1");
+          element.setAttribute("style", "display: block;");
+		  var element = document.getElementById("main_nav_element2");
+          element.setAttribute("style", "display: block;");
+		  var element = document.getElementById("main_nav_element3");
+          element.setAttribute("style", "display: block;");
+		  var element = document.getElementById("main_nav_element4");
+          element.setAttribute("style", "display: block;");
+		  
+		  }
+      }
+      function pageIndicator(){
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "list-item"
+      }
+      function closePageIndicator() {
+          var element = document.getElementById("page_indicator1");
+          element.style.display = "none"
+      }
+    </script>
+  </head>
+  <body onload="mobileResize()">
+
+    <header>
+      <div id="navbar">
+        <a id="main_nav_element1" class="nav_element nav_element_home" href="index.html">Home</a>
+        <a id="main_nav_element2" class="nav_element_current" href="downloads.html">Back</a>
+        <button type="button" id="mobile_nav_element1" class="mobile_nav_element" onclick="pageIndicator()" style="display: none;"><a href="#TOP" style="color: white;"> ☰ Menu</a></button>
+      </div>
+    <div style="display: none;" class="page_indicator" id="page_indicator1" >
+      <center>
+        <a> </a> <br>
+      <a class="indicator_element indicator_element_current indicator_element_first" href="downloads.html">Back</a>
+      <a> </a> <br>
+	  <a> </a> <br>
+	  
+	  <button type="button" class="indicator_element_button" onclick="closePageIndicator()">&cross; Close</button>
+      </center>
+    </div>
+    </header>
+    <main id="resize_main">
+		<h1>Kernel configurations</h1>
+		<hr>
+		<p>My personal Linux Kernel configs will soon be found here.</p>
+    </main>
+  </body>
+</html>
