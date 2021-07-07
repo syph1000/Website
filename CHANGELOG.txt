@@ -1,9 +1,13 @@
 Soon:
 - Dark status bar in downloads tab on iOS 15
-- More visual changes to MataUX
-- GitHub repo for MataUX
+- More visual changes
+- GitHub repo for custom design language
 - New favicon
 
+# 07.07.2021 - Updated some text.
+- Updated some text.
+- Shrinked the downloads window
+- Removed the kernel config page as it will be integrated in the downloads tab
 # 03.07.2021 - Animations!
 - Added more CSS animations
 - Mobile transitions no longer stutter
