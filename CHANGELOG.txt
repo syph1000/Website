@@ -1,9 +1,12 @@
 Soon:
 - Dark status bar in downloads tab on iOS 15
 - More visual changes
-- GitHub repo for custom design language
-- New favicon
 
+# 17.07.2021 - Added and updated some stuff.
+- Updated projects
+- Added languages on homepage
+- Updated favicon
+- Added image to the bottom of the home and about page
 # 07.07.2021 - Updated some text.
 - Updated some text.
 - Shrinked the downloads window
