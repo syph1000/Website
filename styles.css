@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     margin: 0;
     font-size: medium;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 	transition: all 1s;
 } 
 
