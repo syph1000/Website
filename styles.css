@@ -34,6 +34,10 @@ a:hover {
 #main_nav_element4 {
 	display: none;
 }
+
+#main_nav_element5 {
+  display: none;
+}
 .nav_element {
 	display: block;
     float: left;
