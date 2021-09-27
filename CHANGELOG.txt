@@ -1,6 +1,8 @@
 Soon:
 - More visual changes
 
+# 27.09.2021 - Guides
+- Added a guide page that will soon have guides
 # 26.08.2021 - Sample text
 - Temporarily removed Google Fonts (the Ubuntu font) because apparently it's a privacy concern and it needs a privacy policy
 # 17.07.2021 - Added and updated some stuff.
